@@ -1,0 +1,46 @@
+{
+    "title": "Meta Ad Library Video Analyzer",
+    "description": "AI-powered video ad analysis. Paste a brand's Ad Library link, choose how many videos, and get full persuasion intelligence.",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "brandInput": {
+            "title": "Brand Ad Library Link or Name",
+            "type": "string",
+            "description": "Paste the brand's Meta Ad Library page URL. Example: https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=108824890903484 — You can also enter just the brand name, but the direct link is more reliable.",
+            "editor": "textfield",
+            "prefill": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=108824890903484"
+        },
+        "numberOfVideos": {
+            "title": "Number of videos to analyze",
+            "type": "integer",
+            "description": "How many video ads to analyze from this brand. The most recent videos are selected first.",
+            "default": 5,
+            "minimum": 1,
+            "maximum": 50
+        },
+        "analysisDepth": {
+            "title": "Analysis depth",
+            "type": "string",
+            "description": "Standard is fast and cost-effective. Deep adds adversarial validation to catch contradictions and unsupported claims.",
+            "editor": "select",
+            "enum": ["standard", "deep"],
+            "enumTitles": [
+                "Standard (recommended)",
+                "Deep (adversarial validation)"
+            ],
+            "default": "standard",
+            "sectionCaption": "Analysis Settings",
+            "sectionDescription": "Configure the depth and scope of your analysis."
+        },
+        "proxyConfiguration": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "description": "Residential proxies are auto-configured by default. Only change this if you have specific proxy needs.",
+            "editor": "proxy",
+            "sectionCaption": "Advanced",
+            "sectionDescription": "Proxy and network settings. Residential proxies are used automatically — most users can skip this."
+        }
+    },
+    "required": ["brandInput"]
+}

@@ -1,0 +1,14 @@
+{
+    "actorSpecification": 1,
+    "name": "meta-ad-video-analyzer",
+    "title": "Meta Ad Library Video Analyzer",
+    "description": "AI-powered deep analysis of Meta (Facebook/Instagram) video ads. Extracts claims, proof elements, hook archetypes, persuasion scores, and generates strategic text reports.",
+    "version": "1.0",
+    "buildTag": "latest",
+    "environmentVariables": {
+        "GEMINI_API_KEY": "@GEMINI_API_KEY",
+        "OPENAI_API_KEY": "@OPENAI_API_KEY"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}
