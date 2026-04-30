@@ -67,14 +67,14 @@ Plus a **Strategic Report** that synthesizes patterns across all the videos: wha
 
 ## How Much Does It Cost?
 
-**$0.50 per video analyzed.** That's it.
+**$0.20 per video analyzed.** That's it.
 
 | Videos Analyzed | Cost |
 |---|---|
-| 1 video | $0.50 |
-| 5 videos | $2.50 |
-| 10 videos | $5.00 |
-| 50 videos | $25.00 |
+| 1 video | $0.20 |
+| 5 videos | $1.00 |
+| 10 videos | $2.00 |
+| 50 videos | $10.00 |
 
 No subscription. No monthly fee. Pay only for the videos you analyze.
 
